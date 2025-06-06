@@ -11,6 +11,7 @@ The system takes an input image, processes it to extract brightness information,
 *   **Image Loading & Processing**: Loads various image formats, converts them to grayscale, and resizes them for optimal ASCII art generation.
 *   **Customizable Output**: Allows setting the output width of the ASCII art.
 *   **Flexible Output**: Display ASCII art directly in the terminal or save it to a `.txt` file.
+*   **Web Interface**: Provides a user-friendly web interface for uploading images and viewing ASCII art in a browser.
 
 ## Installation
 
@@ -63,6 +64,24 @@ Use the `python3 -m src.main` command followed by the image path and optional ar
     python3 -m src.main /path/to/your/image.jpg -w 200
     ```
 
+### Web Interface Usage
+
+To use the web interface, ensure your virtual environment is activated and then run the `app.py` Flask application:
+
+1.  **Activate your virtual environment** (if not already active):
+    ```bash
+    source venv/bin/activate
+    ```
+
+2.  **Run the Flask application**:
+    ```bash
+    python app.py
+    ```
+    You should see output indicating that the Flask development server is running, usually on `http://127.0.0.1:5000` or `http://localhost:5000`.
+
+3.  **Access the web interface**:
+    Open your web browser and navigate to the address provided in the terminal (e.g., `http://127.0.0.1:5000`). You will be able to upload an image and see the ASCII art directly in your browser.
+
 ## Project Structure
 
 *   `src/main.py`: The command-line interface (CLI) entry point for the application.
@@ -71,3 +90,4 @@ Use the `python3 -m src.main` command followed by the image path and optional ar
 *   `src/ascii_converter.py`: Orchestrates the image processing and character mapping to generate the final ASCII art.
 *   `src/output_handler.py`: Manages saving the generated ASCII art to text files.
 *   `requirements.txt`: Lists the Python dependencies required for the project (e.g., Pillow).
+*   `app.py`: The Flask web application entry point for the web interface.
