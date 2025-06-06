@@ -18,7 +18,7 @@ To set up and run this project, follow these steps:
 
 1.  **Clone the repository** (if you haven't already):
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/JasonLam1218/ascii_converter.git
     cd ascii_converter
     ```
 
