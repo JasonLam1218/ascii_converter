@@ -39,5 +39,8 @@ def convert_image():
         except Exception as e:
             return f"An error occurred during conversion: {e}", 500
 
+def convert_to_uppercase(text):
+    return text.upper()
+
 if __name__ == '__main__':
     app.run(debug=True)
